@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <div class="content">
+    <header>
+      <h1 class="title">todo</h1>
+    </header>
+    <main>
+      <ul class="list">
+        <li class="list-item mb-8" id="1">
+          <input type="checkbox" class="input-checkbox">
+          <span>Crie uma nova tarefa...</span>
+        </li>
+        <li class="list-item actions">
+          <span id="items-counter">
+            0 Itens restando
+          </span>
+          <button id="clear-btn">
+            <span>Limpar finalizados</span>
+          </button>
+        </li>
+        <li class="list-item li-footer">
+          <span>Todos</span>
+          <button id="completed-btn">
+            <span>Finalizados</span>
+          </button>
+        </li>       
+      </ul>
+      <ul class="list completed display-none">
+        <li class="list-item no-items">
+          <span>Nenhum item por aqui...</span>
+        </li>
+        <li class="list-item li-footer li-completed">
+          <button id="all-btn">
+            <span>Todos</span>
+          </button>
+          <span>Finalizados</span>
+        </li> 
+      </ul>
+    </main>
+  </div>
+</body>
+</html>
